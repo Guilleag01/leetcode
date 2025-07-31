@@ -1,6 +1,11 @@
-use crate::{ListNode, Solution};
+use crate::Solution;
 
 // Definition for singly-linked list.
+#[derive(PartialEq, Eq, Clone, Debug)]
+pub struct ListNode {
+    pub val: i32,
+    pub next: Option<Box<ListNode>>,
+}
 
 impl Solution {
     pub fn add_two_numbers(
